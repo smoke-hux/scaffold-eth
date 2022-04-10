@@ -34,28 +34,14 @@ import { useStaticJsonRPC } from "./hooks";
 
 const { ethers } = require("ethers");
 /*
-    Welcome to 🏗 scaffold-eth !
+    Welcome to FEMIPOWER Dapp
 
-    Code:
-    https://github.com/scaffold-eth/scaffold-eth
+    This is a demo application for the FEMIPOWER Dapp.     */
 
-    Support:
-    https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA
-    or DM @austingriffith on twitter or telegram
-
-    You should get your own Alchemy.com & Infura.io ID and put it in `constants.js`
-    (this is your connection to the main Ethereum network for ENS etc.)
-
-
-    🌏 EXTERNAL CONTRACTS:
-    You can also bring in contract artifacts in `constants.js`
-    (and then use the `useExternalContractLoader()` hook!)
-*/
-
-/// 📡 What chain are your contracts deployed to?
+/// What chain are your contracts deployed to?
 const initialNetwork = NETWORKS.localhost; // <------- select your target frontend network (localhost, rinkeby, xdai, mainnet)
 
-// 😬 Sorry for all the console logging
+// Sorry for all the console logging
 const DEBUG = true;
 const NETWORKCHECK = true;
 const USE_BURNER_WALLET = true; // toggle burner wallet feature
@@ -63,7 +49,7 @@ const USE_NETWORK_SELECTOR = false;
 
 const web3Modal = Web3ModalSetup();
 
-// 🛰 providers
+// providers
 const providers = [
   "https://eth-mainnet.gateway.pokt.network/v1/lb/611156b4a585a20035148406",
   `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_KEY}`,
